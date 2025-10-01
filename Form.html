@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="icon" type="image/gif" href="logoT.gif">
+    <title>REGISTER FORM</title>
+ </head>
+ <header>
+     <a href="Index.html" style="margin-right: 20px;">BACK HOME</a>
+</header>
+<h1>Funeral Services Registration Form </h1>
+<h3>MANYELELA FUNERAL SERVICES – Honouring Lives, Comforting Hearts</h3>
+<body>
+<P style="font-size: 1.3em;">
+    Please complete the form below to register for funeral services.
+    Our team will contact you to guide you through the next steps
+    with care and compassion.
+</P>
+<hr>
+<h3> Personal Details of the Deceased
+</h3>
+<form action="submit_form.php" method="post" enctype="multipart/form-data">
+
+<label for="fullName"> FullNames :</label>
+<input type="text" id="FullNames" required minlength="3" maxlength="50">
+<br></br>
+
+<label for="surname" >Surnames :</label>
+<input type="text" id="surname" required minlength="3" maxlength="50"><br>
+</br>
+
+<label for="dateOfPassing">Date of Passing :</label>
+    <input type="date" id="dateOfPassing" name="dateOfPassing" required>
+    <br><br>
+
+    <label for="idNumber">ID Number:</label>
+<input type="text" id="idNumber" name="idNumber" required minlength="6" maxlength="20">
+<br><br>
+
+<label for="homeAddress">Home Address:</label>
+<input type="text" id="homeAddress" name="homeAddress" required maxlength="100">
+<br><br>
+
+<label for="placeOfDeath">Place of Death:</label>
+<input type="text" id="placeOfDeath" name="placeOfDeath" required maxlength="50">
+<br><br>
+
+<hr>
+<h3>Family Contact Information</h3>
+
+<label for="kinFullName">Full Name of Next of Kin:</label>
+<input type="text" id="kinFullName" name="kinFullName" required minlength="3" maxlength="50">
+<br><br>
+
+<label for="relationship">Relationship to Deceased:</label>
+<input type="text" id="relationship" name="relationship" required maxlength="30">
+<br><br>
+
+<label for="kinPhone">Phone Number:</label>
+<input type="tel" id="kinPhone" name="kinPhone" required pattern="[0-9]{10,15}">
+<br><br>
+
+<label for="kinEmail">Email Address:</label>
+<input type="email" id="kinEmail" name="kinEmail" required>
+<br><br>
+
+<label for="kinAddress">Home Address (if different):</label>
+<input type="text" id="kinAddress" name="kinAddress" maxlength="100">
+<br><br>
+<hr>
+<h3>Service Preferences</h3>
+
+<label>Type of Service:</label><br>
+<input type="checkbox" id="traditional" name="serviceType[]" value="Traditional Funeral">
+<label for="traditional">Traditional Funeral</label><br>
+<input type="checkbox" id="memorial" name="serviceType[]" value="Memorial Service">
+<label for="memorial">Memorial Service</label><br>
+<input type="checkbox" id="cremation" name="serviceType[]" value="Cremation">
+<label for="cremation">Cremation</label><br>
+<input type="checkbox" id="graveside" name="serviceType[]" value="Graveside Service">
+<label for="graveside">Graveside Service</label><br>
+<input type="checkbox" id="other" name="serviceType[]" value="Other">
+<label for="other">Other:</label>
+<input type="text" name="otherService" maxlength="50">
+<br><br>
+
+<label for="preferredDateTime">Preferred Date & Time:</label>
+<input type="datetime-local" id="preferredDateTime" name="preferredDateTime">
+<br><br>
+
+<label for="venue">Venue (if known):</label>
+<input type="text" id="venue" name="venue" maxlength="100">
+<br><br>
+
+<label for="traditions">Religious or Cultural Traditions to Observe:</label>
+<input type="text" id="traditions" name="traditions" maxlength="100">
+<br><br>
+
+<label for="specialRequests">Special Requests (e.g., music, flowers, attire):</label>
+<input type="text" id="specialRequests" name="specialRequests" maxlength="150">
+<br><br>
+<hr>
+<h3>Burial or Cremation Details</h3>
+
+<label for="cemeteryName">Cemetery or Crematorium Name (if applicable):</label>
+<input type="text" id="cemeteryName" name="cemeteryName" maxlength="100">
+<br><br>
+
+<label for="graveNumber">Grave Number / Plot (if applicable):</label>
+<input type="text" id="graveNumber" name="graveNumber" maxlength="50">
+<br><br>
+
+<label>Do you require transport arrangements?</label>
+<input type="radio" id="transportYes" name="transport" value="Yes">
+<label for="transportYes">Yes</label>
+<input type="radio" id="transportNo" name="transport" value="No">
+<label for="transportNo">No</label>
+<br><br>
+<hr>
+<h3>Additional Notes</h3>
+<label for="additionalNotes">Please share any other details or wishes you'd like us to know:</label><br>
+<textarea id="additionalNotes" name="additionalNotes" rows="4" cols="60"></textarea>
+<br><br>
+
+<hr>
+<h3>✅ Declaration</h3>
+<p>
+I confirm that the information provided is accurate and I am authorized to arrange funeral services for the deceased.
+</p>
+<label for="signature">Signature:</label>
+<input type="text" id="signature" name="signature" required maxlength="50">
+<br><br>
+
+<label for="declarationDate">Date:</label>
+<input type="date" id="declarationDate" name="declarationDate" required>
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>"
+
+</body>
+</html>
