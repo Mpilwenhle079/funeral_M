@@ -1,0 +1,129 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5fff5; /* Soft light green background */
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6ffe6; /* Light green tint */
+  color: #2e7d32; /* Deep green for contrast */
+}
+
+.hero h1 {
+  margin: 10px 0;
+  font-size: 2em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Call-to-Action Buttons */
+.cta-btn {
+  background-color: #66bb6a; /* Medium green */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #43a047; /* Darker green */
+}
+
+/* Quick Links Section */
+.quick-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.quick-link a {
+  text-decoration: none;
+  background-color: #81c784;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.quick-link a:hover {
+  background-color: #4caf50;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
+.service {
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.service-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Testimonial */
+.testimonial {
+  text-align: center;
+  font-style: italic;
+  background-color: #e8f5e9;
+  padding: 20px;
+  margin: 40px 20px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #c8e6c9;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.95em;
+  color: #2e7d32;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  background-color: #66bb6a;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+  background-color: #43a047;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
